@@ -1,0 +1,49 @@
+{
+  "MODEL": "SGPN",
+  "VERBOSE": true,
+  "MAX_EPOCHES": 130,
+  "LR": 0.00004,
+  "W_DECAY": 0.0001,
+  "BATCH_SIZE": 16,
+  "N_GRAD_ACCUM": 1,
+  "GRAD_CLIP": 0.1,
+  "NUM_WORKERS": 12,
+  "SEED": 4,
+  "USE_GT": false,
+  "USE_BBOX": false,
+  "pix2sg": true,
+  "CAMERAS": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "_PC_INPUT_OPTIONS": [
+    false,
+    "crop",
+    "full"
+  ],
+  "PC_INPUT": false,
+  "_IMAGE_INPUT_OPTIONS": [
+    false,
+    "crop",
+    "full"
+  ],
+  "IMAGE_INPUT": "full",
+  "WEIGHTING": true,
+  "MODEL": {
+    "N_DECODERS": 2,
+    "FREEZE_FIRST_N": 5,
+    "FULL_IMAGE_EMBEDDING_SIZE": 768,
+    "IMAGE_MODEL": "tf_efficientnet_b5_ns",
+    "WEIGHT_PREDICATES": false
+  },
+  "dataset": {
+    "root": [
+      "scene_graph_prediction/data/inm_data"
+    ],
+    "data_augmentation": true,
+    "target_resolution": 456,
+    "DATASET_SUFFIX": "_pix2sg"
+  }
+}
