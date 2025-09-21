@@ -11,11 +11,12 @@ approximates the NP-hard scene graph matching problem, enabling objective assess
 balances matching quality and computational performance, making it a powerful tool for benchmarking and further research in the LF-SGG domain.
 
 ```
-@article{ozsoy2023location,
+@inproceedings{ozsoy2025location,
   title={Location-free scene graph generation},
-  author={{\"O}zsoy, Ege and Holm, Felix and Saleh, Mahdi and Czempiel, Tobias and Pellegrini, Chantal and Navab, Nassir and Busam, Benjamin},
-  journal={arXiv preprint arXiv:2303.10944},
-  year={2023}
+  author={{\"O}zsoy, Ege and Holm, Felix and Pellegrini, Chantal and Czempiel, Tobias and Saleh, Mahdi and Navab, Nassir and Busam, Benjamin},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={108--117},
+  year={2025}
 }
 ```
 
